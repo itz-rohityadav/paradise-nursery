@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paradise Nursery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">Paradise Nursery</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project Details</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Plant Section -->
+    <section class="plants">
+        <h2>Our Plants</h2>
+        <div class="plant-container">
+
+            <div class="plant-card">
+                <img src="assets/images/plant1.jpg" alt="Aloe Vera">
+                <h3>Aloe Vera</h3>
+                <p>Medicinal indoor plant</p>
+                <p class="price">₹250</p>
+                <button onclick="addToCart('Aloe Vera', 250)">Add to Cart</button>
+            </div>
+
+            <div class="plant-card">
+                <img src="assets/images/plant2.jpg" alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>Low maintenance air purifier</p>
+                <p class="price">₹300</p>
+                <button onclick="addToCart('Snake Plant', 300)">Add to Cart</button>
+            </div>
+
+            <div class="plant-card">
+                <img src="assets/images/plant3.jpg" alt="Money Plant">
+                <h3>Money Plant</h3>
+                <p>Popular decorative plant</p>
+                <p class="price">₹200</p>
+                <button onclick="addToCart('Money Plant', 200)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: ₹<span id="total">0</span></strong></p>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="assets/images/profile.jpg" class="profile">
+        <p>I am a learner building front-end projects with HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Project Details</h2>
+        <ul>
+            <li>Plant Shopping Cart Application</li>
+            <li>Responsive Portfolio Website</li>
+            <li>JavaScript Expense Tracker</li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div><img src="assets/icons/html.png">HTML</div>
+            <div><img src="assets/icons/css.png">CSS</div>
+            <div><img src="assets/icons/javascript.png">JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <ul id="recommendation-list">
+            <li>Demonstrates strong fundamentals in web development.</li>
+            <li>Shows consistency and attention to detail.</li>
+            <li>Quick learner with practical implementation skills.</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
